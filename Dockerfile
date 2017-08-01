@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine:latest
 MAINTAINER Evan Sarmiento <evansarm@gmail.com>
 RUN apk update \
     && apk add squid=3.5.23-r0 \
