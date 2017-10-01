@@ -2,8 +2,7 @@ FROM alpine:latest
 MAINTAINER Simon Tran <simon@linosec.lu>
 
 RUN apk update \
-    && apk add squid=3.5.23-r3 \
-    && apk add curl \
+    && apk add squid=3.5.23-r2 \
     && apk add apache2-utils \
     && rm -rf /var/cache/apk/*
 RUN mkdir /usr/etc
