@@ -1,7 +1,8 @@
 FROM alpine:latest
-MAINTAINER Evan Sarmiento <evansarm@gmail.com>
+MAINTAINER Simon Tran <simon@linosec.lu>
+
 RUN apk update \
-    && apk add squid=3.5.23-r0 \
+    && apk add squid=3.5.23-r3 \
     && apk add curl \
     && apk add apache2-utils \
     && rm -rf /var/cache/apk/*
